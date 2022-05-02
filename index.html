@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekigae</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <div class="wrapper seat">
+        <div class="seat__header">
+            <img src="assets/images/teacher.png" width="120" height="104" alt="教師の画像">前
+        </div>
+        <div id="seat" class="seat__body"></div>
+        <button class="btn" id="btn-stop">ストップ！</button>
+        <button class="btn" id="btn-restart">もう一回！</button>
+    </div>
+    <div class="c-overlay">
+    <div class="c-overlay">
+        <div class="c-overlay__inner">
+            <div class="c-overlay__header">
+                <h2 class="c-overlay__heading">席決めシステム</h2>
+                <p>参加者に割り振りされた番号を使って席決めシステムを作ります！</p>
+            </div>
+            <div class="c-overlay__body">
+                <ul class="p-seat-setting">
+                    <li class="p-seat-setting__item">
+                        <label for="studentNumber">人数</label>
+                        <input type="number" value="" min="1" max="50" placeholder="受講生人数(〜50)" class="input-field" id="studentNumber" name="studentNumber">
+                    </li>
+
+                    <li class="p-seat-setting__item">
+                        <label for="absence">欠席者の番号をカンマ区切りで入力してください（半角英数）</label>
+                        <input type="text" name="absence" id="absence" class="input-field">
+                    </li>
+                </ul>
+            </div>
+            <div class="c-overlay__footer">
+                <div class="text-center">
+                    <button class="btn" id="btn-start">席替えスタート!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
